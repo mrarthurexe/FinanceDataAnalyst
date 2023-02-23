@@ -1,1 +1,0 @@
-SELECT dollar_value FROM dollar;

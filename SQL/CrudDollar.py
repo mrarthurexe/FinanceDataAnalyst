@@ -1,5 +1,6 @@
 __package__ = "Finance.SQL"
 import psycopg2
+from Scrappers.DollarGoogleScraperBS import getValue, getDate
 
 try:
         conn = None
@@ -17,7 +18,9 @@ try:
 except Exception as e:
     print('Error connecting to database:' + e)
 
-def insertDollar(dollar, date):
+def insertDollar():
+    dollar = getValue()
+    date = getDate()
     query = f"INSERT INTO public.\"dollar\" (\"dollar_value\", \"dollar_date\") VALUES ('{dollar}', '{date}')"
     try:
         cur.execute(query)

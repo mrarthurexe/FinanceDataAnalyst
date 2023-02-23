@@ -17,6 +17,7 @@ def plotGraph():
 def getAverage():
     values = getDollarValues()
     average = sum(values) / len(values)
+    print('Average: ' + str(average))
     return average
 
 def getMedian():

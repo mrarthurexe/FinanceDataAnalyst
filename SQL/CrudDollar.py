@@ -1,6 +1,6 @@
 __package__ = "Finance.SQL"
 import psycopg2
-from Scrappers.DollarGoogleScraperBS import getValue, getDate
+from Scrapers.DollarGoogleScraperBS import getValue, getDate
 
 try:
         conn = None

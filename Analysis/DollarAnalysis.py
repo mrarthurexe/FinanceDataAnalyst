@@ -4,7 +4,7 @@ from numpy import *
 from matplotlib.pyplot import *
 from SQL.CrudDollar import getDollarValues
 
-def plotGraph():
+def plotDollarGraph():
     title('Dollar value evolution')
     xlabel('Search number')
     ylabel('Dollar value')
@@ -14,23 +14,23 @@ def plotGraph():
     grid(True)
     show()
 
-def getAverage():
+def getDollarAverage():
     values = getDollarValues()
     average = sum(values) / len(values)
     print('Average: ' + str(average))
     return average
 
-def getMedian():
+def getDollarMedian():
     values = getDollarValues()
     median = median(values)
     return median
 
-def getStandardDeviation():
+def getDollarStandardDeviation():
     values = getDollarValues()
     standard_deviation = std(values)
     return standard_deviation
 
-def getVariance():
+def getDollarVariance():
     values = getDollarValues()
     variance = var(values)
     return variance

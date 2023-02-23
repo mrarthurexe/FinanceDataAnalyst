@@ -1,4 +1,4 @@
-__package__ = "Finance.Scrappers"
+__package__ = "Finance.Scrapers"
 
 from urllib.request import URLopener
 from bs4 import BeautifulSoup
